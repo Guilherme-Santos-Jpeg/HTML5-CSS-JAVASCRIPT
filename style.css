@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+
+body {
+    background-color:rgb(102, 247, 174); 
+    margin: -10px -10px 0px -10px
+}
+
+header#caixa {
+    width:auto;
+    height:auto;
+    background-image: linear-gradient(180deg, rgb(85, 250, 167) 40%, rgb(1, 105, 53) 140%);
+    background-image: linear-gradient(180deg, rgb(85, 250, 167) 40%, rgb(1, 105, 53) 140%);
+    padding: 30px 40px;
+    position:inherit;
+    top:0;
+    left:0;
+}
+section#caixa {
+    background-color: white;
+    width: auto;
+    margin: auto;
+    padding: 1px 20px 2px 20px;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+h1#principal {
+    font-family:BAHNSCHRIFT;
+    font-size: 35pt;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.6);
+}
+
+p#pritext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+}
+
+nav#atalhos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 35px 10px -18px 0px;
+    word-spacing: 11pt;
+    font-weight:bolder;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+#retorno {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: Black;
+    font-weight: 200;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    margin: 0px 4px 5px;
+}
+
+h1 {
+    font-family: idroid;
+    font-size: 30pt;
+    color: green;
+}
+
+h2 {
+    font-family: idroid;
+    background-image: linear-gradient(to right, rgb(185, 253, 185), hsla(0, 0%, 100%, 0.774));
+    color: green;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.droids {
+    height: 266px;
+    width: 800px;
+    margin: 0px;
+    background-image: url(./imagens/dan-droids.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.central {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+.irina {
+    height: 236px;
+    width: 800px;
+    margin: 0px -100px 4px -100px;
+    background-image: url(./imagens/irina-blok.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.bugdroid {
+    height: 292px;
+    width: 592px;
+    margin: -20px -100px 4px -100px;
+    background-image: url(./imagens/bugdroid.png);
+    background-size:contain;
+    background-position: center;
+}
+
+.container video {
+    height: auto;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+article#caixinha {
+    background-color: rgb(3, 83, 17);
+    width: auto;
+    margin: 0px -20px 4px -20px ;
+    padding: 5px 60px 2px 60px;
+}
+
+article#aprender {
+    background-color: #34825B;
+    width: auto;
+    margin: 10px 10px 2px;
+    padding: 5px;
+    box-shadow: 8px 3px 7px -1px rgba(0,0,0,0.28);
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-width: 100px;
+    margin: 4px 10px 3px;
+}
+
+article#versoes {
+    background-color: #9dfccc;
+    width: auto;
+    height: auto;
+    margin: -2px 10px 2px;
+    padding: 10px;
+    box-shadow: 8px 3px 7px -1px rgba(0,0,0,0.28);
+    border-radius: 0px 0px 8px 8px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+#left {
+    width: 50%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+#right {
+    width: 50%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+p.androids {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+footer#final {
+    background-color:rgb(3, 83, 17);
+    width: auto;
+    height: auto;
+    margin: -10px 0px -10px 0px;
+    padding: 10px;
+}
+
+p.final {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+}
