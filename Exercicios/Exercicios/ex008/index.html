@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+
+<body>
+    <h1>Testando Imagens</h1>
+    <h3>Imagens</h3>
+    <p>Imagem que se redimensiona conforme se mexe</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Imagem teste redimensionamento">
+    </picture>
+
+    <h3>Áudio</h3>
+    <p>Colocando um áudio via HTML</p>
+    <audio preload="metadata" controls>
+        <source src="Imagine Dragons  JID - Enemy (from the series Arcane League of Legends)  Official Music Video.mp3"
+            type="audio/mpeg">
+        <source src="Imagine Dragons  JID - Enemy (from the series Arcane League of Legends)  Official Music Video.mp3"
+            type="audio/ogg">
+        <source src="Imagine Dragons  JID - Enemy (from the series Arcane League of Legends)  Official Music Video.mp3"
+            type="image/wav">
+        <p>Não está reproduzindo?<a
+                href="Imagine Dragons  JID - Enemy (from the series Arcane League of Legends)  Official Music Video.mp3"
+                download="Imagine Dragons  JID - Enemy (from the series Arcane League of Legends)  Official Music Video.mp3"
+                type="audio/mpeg"></a></p>
+    </audio>
+
+    <h3>Vídeo</h3>
+    <video witdh="" poster="malow.png" controls>
+        <Source src="The Weeknd - Blinding Lights - Cat Cover.mp4" type="video/mp4">
+        <p>Não foi possível reproduzir</p>
+    </video>
+
+    <h3>Vídeo via YouTube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5sNuDu4dE8Y" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+        allowfullscreen></iframe>
+        
+
+
+
+</body>
+
+</html>

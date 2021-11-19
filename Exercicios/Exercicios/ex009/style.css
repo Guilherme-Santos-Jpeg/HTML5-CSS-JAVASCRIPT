@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    font-family:monospace;
+    background-image: radial-gradient(circle, yellow 75%, red 20%, green 5%);
+    font-size: 16pt;
+    color:black;
+}
+
+h1 {
+    color:black;
+    background-color:blueviolet;
+}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: linear-gradient(to right, #e6e6e6, #f1f1ee);
+}
+
+h1 {
+    font-family: 'Gurajada', serif;;
+    color: #0F0509;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Gurajada', serif;;
+    color: #0F0509;
+    text-align: center
+}
+
+a { 
+    color: inherit; 
+} 
+
+.principal {
+    font-family: 'Gurajada', serif;;
+    color: #0F0509;
+    text-align: center;
+    border: azure;
+}
+
+.alinhamentologo {
+vertical-align: -500%;
+}
+
+.paineis {
+    margin: 0px 0px 0px 1200px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    font-weight: bolder;    
+}
+
+.flex-container {
+    display: flex;
+}
