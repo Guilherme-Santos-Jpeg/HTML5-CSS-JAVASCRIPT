@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.quadrado {
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+div#q1 {
+    background-color: skyblue;
+
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+div#q3 {
+    background-image:url(https://c.disquscdn.com/uploads/users/34158/4098/avatar92.jpg?1595870893) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#fora {
+    height: 250px;
+    width: 250px;
+    background-color: #bd7df5;
+    position: relative;
+}
+
+div#dentro {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
