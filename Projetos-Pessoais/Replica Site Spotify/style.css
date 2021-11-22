@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.retangulo {
+    width: auto;
+    height: 80px;
+    margin: -16px -8px 0px -10px;
+    min-width: 50px;
+    max-width: 5000px;
+    background-color: black;
+}
