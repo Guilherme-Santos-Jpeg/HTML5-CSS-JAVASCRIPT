@@ -2,9 +2,20 @@
 
 .retangulo {
     width: auto;
-    height: 80px;
+    height: 89px;
     margin: -16px -8px 0px -10px;
     min-width: 50px;
     max-width: 5000px;
     background-color: black;
 }
+
+.logo {
+    width: 130px;
+    height: 39px;
+
+    position: absolute;
+    top: 22px;
+    left: 380px;
+    
+}
+
