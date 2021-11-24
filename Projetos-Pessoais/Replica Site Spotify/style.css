@@ -10,6 +10,14 @@
     src: url('AvenirLTStd-Medium.otf') format('opentype');
 }
 
+@media (max-width: 768px) {
+    html {
+    font-size: 50%;
+    }   
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +39,7 @@ header {
 
 header .container {
     display: flex;
-    align-items: center;
+    align-items:left;
     justify-content: left;
 
     width: 90%;
@@ -41,66 +49,71 @@ header .container {
 }
 
  header img {
-    width: 150px;
-    margin-left: 5px;
-    padding: 15px 0;
+    margin: 6% 0% 6% 0%;
+    padding: 15px 0px 7px 0px;
     
+}
+
+header picture source {
+    margin: 6% 0% 6% 0%;
+    padding: 15px 0px 7px 5px;
 }
 
 main {
     margin-bottom: 80px;
 }
 
-section.texto {
-    margin: 80px 0;
+section.hero {
+    margin: 250px 0;
 }
 
 
-section.texto .container {
+section.hero .container {
     width: 90%;
-    max-width: 980px;
+    max-width: 965px;
     
-    margin-left: auto;
+    margin: auto;
 
     display: flex;
+    width: 70%;
+    max-width: 980px;
 }
 
-section.texto p{
+section.hero p{
+    font-family: AvenirLTStd-Medium;
     color: #1ED760;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    margin: 10px 0px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 30PX 30PX 0px 30px;
 }
 
-h1 {
+section.hero h1 {
     font-family: AvenirLTStd-Black;
     color: #1ED760;
     font-size: 15em;
-    text-align: center;
-    line-height: 9rem;
-    font-weight: 400;
-}
-
-h2 {
-    font-family: AvenirLTStd-Medium;
-    color: #1ED760;
-    font-size: 2em;
+    word-spacing:-20px;
     text-align: center;
     line-height: 10rem;
+    font-weight: 300rem;
 }
 
-
-
-
-
-.circulo {
-    border-radius: 50%;
-    display: inline-block;
-    height: 30%;
-    width: 15%;
-    background-color: #1ED760;
-    position:fixed;
-
-    left:20px;
-    top:20px
+section.hero h2 {
+    font-family: AvenirLTStd-Medium;
+    color: #1ED760;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1rem;
 }
+
+.button {
+    display:inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color:#2941AB ;
+    background-color:#1ED760 ;
+    margin: 0px 0px 0px 0px;
+    padding:12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 150ms linear 0s;
