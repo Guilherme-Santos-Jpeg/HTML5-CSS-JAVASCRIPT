@@ -14,9 +14,19 @@
     html {
     font-size: 50%;
     }   
+
+    .button {
+        font-size: initial;
+    }
 }
 
-
+html,
+body {
+  height: 100vh;
+  font-family: "Source Sans Pro";
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
 
 * {
     box-sizing: border-box;
@@ -35,6 +45,7 @@ body {
 
 header {
     background-color: black;
+    margin: 0px 0px 175px;
 }
 
 header .container {
@@ -45,7 +56,7 @@ header .container {
     width: 90%;
     max-width: 980px;
 
-    margin: auto;
+    margin: 0px 0px 10px 46px;
 }
 
  header img {
@@ -60,11 +71,11 @@ header picture source {
 }
 
 main {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 
 section.hero {
-    margin: 250px 0;
+    margin: 0px 0px 25px;
 }
 
 
@@ -79,24 +90,26 @@ section.hero .container {
     max-width: 980px;
 }
 
-section.hero p{
-    font-family: AvenirLTStd-Medium;
-    color: #1ED760;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    margin: 30PX 30PX 0px 30px;
-}
-
 section.hero h1 {
     font-family: AvenirLTStd-Black;
     color: #1ED760;
-    font-size: 15em;
-    word-spacing:0px;
+    font-size: 13.5em;
+    word-spacing:-2px;
     text-align: center;
     line-height: 10rem;
     font-weight: 300rem;
 }
+
+section.hero p{
+    font-family: AvenirLTStd-Medium;
+    font-weight: 600;
+    color: #1ED760;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: auto;
+}
+
 
 section.hero h2 {
     font-family: AvenirLTStd-Medium;
@@ -106,22 +119,28 @@ section.hero h2 {
     line-height: 1rem;
 }
 
+
+section.botão {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
 .button {
-    display:inline-block;
+    display: inline-block;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 10;
     color:#2941AB ;
     background-color:#1ED760 ;
-    margin: 0px 0px 0px 0px;
-    padding:12px 30px;
+    margin: 0px 0px 0px;
+    padding:14px 30px;
     text-decoration: none;
     border-radius: 25px;
     transition: all 150ms linear 0s;
-
 }
 
-@media (max-width: 768px) {
-    html{
-        font-size: 50%;
-    }
+.button:hover {
+    transform: scale(1.1);
+    background: #3aec78;
 }
+
