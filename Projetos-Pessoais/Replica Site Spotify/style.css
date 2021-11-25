@@ -92,7 +92,7 @@ section.hero h1 {
     font-family: AvenirLTStd-Black;
     color: #1ED760;
     font-size: 15em;
-    word-spacing:-20px;
+    word-spacing:0px;
     text-align: center;
     line-height: 10rem;
     font-weight: 300rem;
@@ -117,3 +117,11 @@ section.hero h2 {
     text-decoration: none;
     border-radius: 25px;
     transition: all 150ms linear 0s;
+
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
