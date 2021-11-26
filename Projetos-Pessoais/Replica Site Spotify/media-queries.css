@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+   
+    .button {
+        font-size: initial;
+    }
+
+    header.logo {
+        width: 75px;
+    }
+}
+

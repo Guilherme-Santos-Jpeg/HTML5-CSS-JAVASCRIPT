@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Spotify</title>
@@ -14,11 +15,15 @@
 <body>
     <header>
         <div class="container">
-            <picture>
-                <source media="(max-width:700px )" srcset="spotify-logo-p.png" witdh="110,4px" height="48px">
-                <img class="logo" src="spotify-logo.png" alt="logo Spotify" width="134px" height="60px">
-            </picture>
-            <div class="menu-section">
+            <a href="index.html">
+                <picture>
+                    <source class="menor" media="(max-width: 782px)" srcset="spotify-logo-p.png" type="image/png" width="90px">
+                    <source media="(min-width: 783px)" srcset="spotify-logo.png" type="image/png">
+                    <img class="logo" src="spotify-logo.png" alt="Logo Spotify">
+                </picture>
+            
+        
+        <div class="menu-section">
                 <div class="menu-toggle">
                     <div class="one"></div>
                     <div class="two"></div>
@@ -37,10 +42,6 @@
                         <li>
                             <a href="#">Baixar</a>
                         </li>
-                        <li>
-                            <li role="separator" class="separador">
-
-                            </li>
                         </li>
                         <li>
                             <a href="#">Inscrever-se</a>
@@ -71,6 +72,9 @@
 
     <main>
     </main>
+<footer>
+    
+</footer>
 </body>
 
 </html>

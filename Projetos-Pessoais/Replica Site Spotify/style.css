@@ -9,15 +9,6 @@
     src: url('AvenirLTStd-Medium.otf') format('opentype');
 }
 
-@media (max-width: 768px) {
-    html {
-        font-size: 75%;
-    }
-    .button {
-        font-size: initial;
-    }
-}
-
 html,
 body {
     height: 100vh;
@@ -48,16 +39,18 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     width: 90%;
     max-width: 1500px;
-    margin: 0px 0px 10px 46px;
+
+
+    margin: auto;
 }
 
 header .logo{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.7em;
+    width: 150px;
+    margin-left: 5px;
+    padding: 15px 0;
 }
 
 header nav ul {
@@ -140,3 +133,10 @@ section.botão {
     transform: scale(1.1);
     background: #3aec78;
 }
+
+footer {
+    background-color:black;
+    margin-bottom: 0px;
+}
+
+fo
