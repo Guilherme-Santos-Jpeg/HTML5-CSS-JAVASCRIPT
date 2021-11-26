@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @font-face {
     font-family: AvenirLTStd-Black;
     src: url('AvenirLTStd-Black.otf') format('opentype');
@@ -12,9 +11,8 @@
 
 @media (max-width: 768px) {
     html {
-    font-size: 50%;
-    }   
-
+        font-size: 75%;
+    }
     .button {
         font-size: initial;
     }
@@ -22,10 +20,10 @@
 
 html,
 body {
-  height: 100vh;
-  font-family: "Source Sans Pro";
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -35,13 +33,11 @@ body {
     outline: 0;
 }
 
-
 body {
     background-color: #2941AB;
     font-family: AvenirLTStd-Black;
     font-size: 62.5%;
 }
-
 
 header {
     background-color: black;
@@ -50,57 +46,64 @@ header {
 
 header .container {
     display: flex;
-    align-items:left;
-    justify-content: left;
-
+    align-items: center;
+    justify-content: space-between;
     width: 90%;
-    max-width: 980px;
-
+    max-width: 1500px;
     margin: 0px 0px 10px 46px;
 }
 
- header img {
-    margin: 6% 0% 6% 0%;
-    padding: 15px 0px 7px 0px;
-    
+header .logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7em;
 }
 
-header picture source {
-    margin: 6% 0% 6% 0%;
-    padding: 15px 0px 7px 5px;
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 1.7rem;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    color: #1ED751;
 }
 
 main {
     margin-bottom: 0px;
 }
-
 section.hero {
     margin: 0px 0px 25px;
 }
-
-
 section.hero .container {
     width: 90%;
     max-width: 965px;
-    
     margin: auto;
-
     display: flex;
     width: 70%;
     max-width: 980px;
 }
-
 section.hero h1 {
     font-family: AvenirLTStd-Black;
     color: #1ED760;
     font-size: 13.5em;
-    word-spacing:-2px;
+    word-spacing: -2px;
     text-align: center;
     line-height: 10rem;
     font-weight: 300rem;
 }
-
-section.hero p{
+section.hero p {
     font-family: AvenirLTStd-Medium;
     font-weight: 600;
     color: #1ED760;
@@ -109,8 +112,6 @@ section.hero p{
     line-height: 2rem;
     margin: auto;
 }
-
-
 section.hero h2 {
     font-family: AvenirLTStd-Medium;
     color: #1ED760;
@@ -118,29 +119,24 @@ section.hero h2 {
     text-align: center;
     line-height: 1rem;
 }
-
-
 section.botão {
     margin: 0px;
     display: flex;
     justify-content: center;
 }
-
 .button {
     display: inline-block;
     font-size: 1rem;
     font-weight: 10;
-    color:#2941AB ;
-    background-color:#1ED760 ;
+    color: #2941AB;
+    background-color: #1ED760;
     margin: 0px 0px 0px;
-    padding:14px 30px;
+    padding: 14px 30px;
     text-decoration: none;
     border-radius: 25px;
-    transition: all 150ms linear 0s;
+    transition: all 75ms linear 0s;
 }
-
 .button:hover {
     transform: scale(1.1);
     background: #3aec78;
 }
-
