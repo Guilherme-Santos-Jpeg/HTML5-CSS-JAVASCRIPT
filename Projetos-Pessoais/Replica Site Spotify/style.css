@@ -77,7 +77,7 @@ main {
     margin-bottom: 0px;
 }
 section.hero {
-    margin: 0px 0px 25px;
+    margin: 0px 100px 25px;
 }
 section.hero .container {
     width: 90%;
@@ -113,7 +113,7 @@ section.hero h2 {
     line-height: 1rem;
 }
 section.botão {
-    margin: 0px;
+    margin: 50px 0px 10%;
     display: flex;
     justify-content: center;
 }
@@ -136,7 +136,31 @@ section.botão {
 
 footer {
     background-color:black;
-    margin-bottom: 0px;
+    margin:0px;
 }
 
-fo
+footer .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 25%;
+    max-width: 1500px;
+
+
+    margin: auto;
+}
+
+footer .logo2{
+    width: 150px;
+    margin-left: 100px;
+    padding: 60px 0px;
+}
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav ul li {
+    list-style: none;
+}
