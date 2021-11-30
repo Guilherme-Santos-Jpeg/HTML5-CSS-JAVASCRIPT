@@ -154,7 +154,7 @@ footer .container2 {
 footer .logo2{
     width: 150px;
     margin-left: 100px;
-    padding: 60px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 footer nav ul {
@@ -164,3 +164,56 @@ footer nav ul {
 footer nav ul li {
     list-style: none;
 }
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    transition: all 250ms linear 0s;
+}
+
+footer nav ul li a:hover {
+    color: #1ED751;
+}
+
+.tabela {
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.EMPRESA {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: .08em;
+    display: inline-block;
+} 
+
+.COMUNIDADES {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2.4rem;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: .08em;
+    display: inline-block;
+} 
+
+.UTEIS {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2.1rem;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: .08em;
+    display: inline-block;
+} 
