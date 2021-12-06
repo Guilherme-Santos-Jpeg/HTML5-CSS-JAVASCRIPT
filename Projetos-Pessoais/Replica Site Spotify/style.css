@@ -24,6 +24,10 @@ body {
     outline: 0;
 }
 
+::before, ::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #2941AB;
     font-family: AvenirLTStd-Black;
@@ -135,52 +139,114 @@ section.botão {
 }
 
 footer {
+    display: flex;
     background-color:black;
     padding: 80px 0 50px;
+
 }
 
-footer .container2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    width: auto;
-    max-width: 1500px;
-
-
-    margin: auto;
-}
-
-footer .logo2{
-    width: 150px;
-    margin-left: 25%;
-    padding: 20px 0px 0px 0px;
-}
-
-footer nav ul {
-    display: flex;
-}
-
-footer nav ul li {
-    list-style: none;
-}
-
-footer nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    padding: 1rem;
-    transition: all 250ms linear 0s;
-}
-
-footer nav ul li a:hover {
+header a:hover {
     color: #1ED751;
+}
+
+[dir] footer {
+    background: #000;
+    padding: 50px 0 20px;
+}
+
+nav {
+    display:inline-flex;
+}
+
+nav.container2 {
+    width: 100%;
+    margin: 0 5% 0;
+}
+
+
+[dir] nav.container2 {
+    margin: 0 auto;
+}
+
+
+[dir] .rodape {
+    padding: 0 15px;
+}
+
+.rodape {
+    display: flex;
+    box-sizing: border-box;
 }
 
 .tabela {
     display: flex;
     -webkit-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+[dir] dl.coluna1 {
+    padding: 0 15px;
+    margin: 0;
+}
+
+dt.coluna1 {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 3.5;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+[dir] dl.coluna2 {
+    padding: 0 15px;
+    margin: 0;
+}
+
+dt.coluna2 {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 3.5;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+dd {
+    display: block;
+    scroll-margin-inline-start: 40px;
+    line-height: 3;
+}
+
+.primário {
+    color: #fff;
+}
+
+a.primário {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1ED751;
+}
+
+
+.logo2 {
+    display: block;
+    box-sizing: border-box;
+    padding:0 15px;
 }
 
 .EMPRESA {
