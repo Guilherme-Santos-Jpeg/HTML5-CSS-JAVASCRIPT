@@ -182,9 +182,10 @@ nav.container2 {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: row;
+    
 }
 
-[dir] dl.coluna1 {
+dl.coluna1 {
     padding: 0 15px;
     margin: 0;
 }
@@ -198,12 +199,26 @@ dt.coluna1 {
     text-transform: uppercase;
 }
 
-[dir] dl.coluna2 {
+dl.coluna2 {
     padding: 0 15px;
     margin: 0;
 }
 
 dt.coluna2 {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 3.5;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+dl.coluna3 {
+    padding: 0 15px;
+    margin: 0;
+}
+
+dt.coluna3 {
     color: #919496;
     font-size: 12px;
     font-weight: 900;
