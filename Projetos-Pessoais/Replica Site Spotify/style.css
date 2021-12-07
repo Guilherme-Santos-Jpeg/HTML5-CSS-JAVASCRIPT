@@ -24,6 +24,11 @@ body {
     outline: 0;
 }
 
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 ::before, ::after {
     box-sizing: border-box;
 }
@@ -53,7 +58,7 @@ header .container {
 
 header .logo{
     width: 150px;
-    margin-left: 5px;
+    margin-left: 50px;
     padding: 15px 0;
 }
 
@@ -163,14 +168,8 @@ nav.container2 {
     margin: 0 5% 0;
 }
 
-
-[dir] nav.container2 {
-    margin: 0 auto;
-}
-
-
 [dir] .rodape {
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 .rodape {
@@ -186,7 +185,7 @@ nav.container2 {
 }
 
 dl.coluna1 {
-    padding: 0 15px;
+    padding: 0px 90px 0px 20px;
     margin: 0;
 }
 
@@ -200,7 +199,7 @@ dt.coluna1 {
 }
 
 dl.coluna2 {
-    padding: 0 15px;
+    padding: 0px 90px 0px 0px;
     margin: 0;
 }
 
@@ -214,7 +213,7 @@ dt.coluna2 {
 }
 
 dl.coluna3 {
-    padding: 0 15px;
+    padding: 0px 90px 0px 0px;
     margin: 0;
 }
 
@@ -261,7 +260,9 @@ footer a:hover {
 .logo2 {
     display: block;
     box-sizing: border-box;
+    margin-left: 50px;
     padding:0 15px;
+
 }
 
 .EMPRESA {
@@ -297,3 +298,71 @@ footer a:hover {
     letter-spacing: .08em;
     display: inline-block;
 } 
+
+.socialmedias {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    justify-content: right;
+}
+
+ul.medias {
+    margin: auto;
+    display: inline-block;
+} 
+
+.icons {
+    margin: 0;
+    padding: auto;
+}
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.3rem;
+    transition: all 250ms linear 0s;
+}
+
+svg {
+    display: inline-block;
+    overflow:visible;
+    background-color: white;
+    height: 50px;
+    border: 10px;
+    border-style: solid;
+    border-color:#222326 ;
+    border-radius: 75%;
+    cursor: pointer;
+}
+
+svg:hover {
+    background-color: #1ED751;
+}
+
+[dir].brasil {
+   margin:0 15px;
+}
+
+.brasil {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+a.brasil {
+    height: 70px;
+    margin: auto 0;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
