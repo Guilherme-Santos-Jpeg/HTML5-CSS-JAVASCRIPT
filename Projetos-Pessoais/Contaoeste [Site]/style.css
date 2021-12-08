@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Gurajada&family=Lato:wght@700&display=swap');
+
+html {
+    font-size: 14px;
+    margin: auto;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+header {
+    background-color: rgb(6, 82, 168);
+    margin: 0px;
+    
+}
+
+header .sociais {
+    display: flex;
+    background-color: #3c7ff1;
+    align-items: right ;
+    justify-content:right;
+    box-sizing: border-box;
+    
+    width: 100%;
+    max-width: auto;
+    height: 30px;
+
+
+    margin: auto;
+}
+
+header .sociais p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    margin-right: 10%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    width: 90%;
+    max-width: 1500px;
+
+
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+ header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    padding: 1.2rem;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li.button {
+    list-style: none;
+    margin: 0px 0px 0px 70px;
+}
+
+
+header nav ul li a.button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+    font-weight: 900;
+    padding: 1.6rem;
+    transition: all 250ms linear 0s;
+    background-color: #002768;
+    border-style: solid;
+    border-color: #5B53AD;
+    border-width: 1px;
+    border-radius: 20px 10px ;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    background-color:#002768 ;
+}
+
+
+.button:hover {
+    transform: scale(1.1);
+    color: #2968f0;
+    background-color: #aaf8f8;
+    
+}
+
+header img {
+    margin-top: 15px;
+    transition: all 250ms linear 0s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.contaoeste {
+    width: 100%;
+    overflow: hidden;
+}
+
+   
