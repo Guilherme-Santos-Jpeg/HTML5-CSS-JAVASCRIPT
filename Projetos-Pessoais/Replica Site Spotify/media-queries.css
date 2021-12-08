@@ -7,8 +7,19 @@
         font-size: initial;
     }
 
-    header.logo {
+    .header.logo {
         width: 75px;
     }
+   
 }
 
+@media(max-width : 1500px) {
+
+    #nav.container2 {
+        width: 20px;
+    }
+
+    nav {
+        display:inline-flex;
+    }
+}
