@@ -31,7 +31,7 @@ li {
 
 
 header {
-    background-color: rgb(6, 82, 168);
+    background-color: #ffffff;
     margin: 0px;
     
 }
@@ -80,17 +80,27 @@ header nav ul li {
 
  header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.4em;
     padding: 1.2rem;
     transition: all 250ms linear 0s;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0px;
+}
+
+header nav ul li a:hover {
+    color: #555454;
+    border-color: #002385;
+    border-style: solid;
+    border-color: #044f58;
+    border-bottom-width: 2px;
 }
 
 header nav ul li.button {
     list-style: none;
     margin: 0px 0px 0px 70px;
 }
-
 
 header nav ul li a.button {
     text-decoration: none;
@@ -99,28 +109,25 @@ header nav ul li a.button {
     font-weight: 900;
     padding: 1.6rem;
     transition: all 250ms linear 0s;
-    background-color: #002768;
+    background: linear-gradient(137deg, rgba(0,39,104,1) 0%, rgba(0,66,177,1) 100%);
     border-style: solid;
-    border-color: #5B53AD;
+    border-color: #1a0ac2;
     border-width: 1px;
     border-radius: 20px 10px ;
 }
 
-header nav ul li a:hover {
-    color: #ffffff;
-    background-color:#002768 ;
-}
-
 
 .button:hover {
-    transform: scale(1.1);
-    color: #2968f0;
-    background-color: #aaf8f8;
-    
+    transform: scale(1);
+    border-radius:  10px 20px ;
+    color: #002385;
+    background: linear-gradient(137deg, rgba(245,251,255,1) 0%, rgba(174,244,234,1) 100%);
 }
 
 header img {
     margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left:-20%;
     transition: all 250ms linear 0s;
 }
 
@@ -133,4 +140,23 @@ header img:hover {
     overflow: hidden;
 }
 
-   
+.contaoeste.frasemar {
+    display: flex;
+    position: relative;
+}
+
+.frasemar {
+    display: flex;
+    background-color: #0d0441;
+    align-items: right ;
+    justify-content:right;
+    box-sizing: border-box;
+    position: fixed;
+    
+    width: 100%;
+    max-width: auto;
+    height: 95px;
+
+
+    margin: -30px auto auto auto;
+}
