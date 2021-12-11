@@ -31,14 +31,14 @@ li {
 
 
 header {
-    background-color: #ffffff;
+    background-color: #DCDCDA;
     margin: 0px;
     
 }
 
 header .sociais {
     display: flex;
-    background-color: #3c7ff1;
+    background-color: #686866;
     align-items: right ;
     justify-content:right;
     box-sizing: border-box;
@@ -79,21 +79,21 @@ header nav ul li {
 }
 
  header nav ul li a {
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1.4em;
     padding: 1.2rem;
     transition: all 250ms linear 0s;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #0185C6;
     border-width: 0px;
 }
 
 header nav ul li a:hover {
-    color: #555454;
-    border-color: #002385;
+    color: #5c5c5c;
+    border-color:#0185C6;
     border-style: solid;
-    border-color: #044f58;
     border-bottom-width: 2px;
 }
 
@@ -109,7 +109,7 @@ header nav ul li a.button {
     font-weight: 900;
     padding: 1.6rem;
     transition: all 250ms linear 0s;
-    background: linear-gradient(137deg, rgba(0,39,104,1) 0%, rgba(0,66,177,1) 100%);
+    background: #334F7D;
     border-style: solid;
     border-color: #1a0ac2;
     border-width: 1px;
@@ -120,8 +120,8 @@ header nav ul li a.button {
 .button:hover {
     transform: scale(1);
     border-radius:  10px 20px ;
-    color: #002385;
-    background: linear-gradient(137deg, rgba(245,251,255,1) 0%, rgba(174,244,234,1) 100%);
+    color:rgb(224, 216, 216) ;
+    background: #192841;
 }
 
 header img {
@@ -137,7 +137,55 @@ header img:hover {
 
 .contaoeste {
     width: 100%;
-    overflow: hidden;
+}
+
+.contaoeste h2 {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 3rem;
+    justify-content: center;
+    padding:12% 0 15% 5%;
+    margin: auto;
+    
+}
+
+.contaoeste p {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.image-finances {
+    display: inline-block;
+    background-image: url(inicio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    width: 100%;
+    height: 800px;
+    
+
+    margin: auto;
+    padding: auto;
+
+}
+
+.image-black {
+    display: inline-block;
+    background-image: url(fade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    width: 100%;
+    
+
+    margin: auto;
+    padding: auto;
 }
 
 .contaoeste.frasemar {
