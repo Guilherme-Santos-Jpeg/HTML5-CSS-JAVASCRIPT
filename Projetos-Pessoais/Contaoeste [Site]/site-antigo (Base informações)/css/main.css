@@ -1,0 +1,185 @@
+/* CSS Document */
+
+* { padding: 0; margin: 0; }  
+
+body { display: block; text-align: center; background:url(../imgs/fnd_geral2.jpg) repeat-x; }
+#main{ display: table; margin: 0 auto; width: 932px; text-align: left; }
+
+#conteudo { clear: both;}
+
+#cabecalho #logo { float:left;}
+
+/*Menu Topo*/         
+#menutop { border-top: solid 5px #E6EBEF; clear:both;}  
+#menutop ul{ background:url(../imgs/fnd_menu_topo.jpg) top no-repeat; width:202px; height:24px; float:right; margin-right:60px;list-style:none;}
+#menutop li {width:65px; float: left;}
+#menutop a { display: block;text-decoration:none; font: bold 12px Arial, Helvetica, sans-serif ; color:#537493; padding: 3px 7px; float:left;  }
+#menutop a:link, #menutop a:visited {  }
+#menutop a:hover, #menutop a:active { }      
+    
+/*Menu*/
+#menu { float: right; margin-top: -27px; clear:both; }        
+#menu ul { display: block; list-style: none;}    
+#menu li { float: left;}     
+#menu li a { display: block; text-align: center; padding: 5px 10px 0px 10px; height:24px; width: 80px; text-decoration: none; font: bold 12px Arial, Helvetica, sans-serif ; color:#FFFFFF;  }
+#menu li a:link, #menu li a:visited { background:url(../imgs/fnd_menu_visitado.jpg) no-repeat; }
+#menu li a:hover, #menu li a:active { background:url(../imgs/fnd_menu_activo.jpg) no-repeat; }  
+
+/*Principal*/
+a.veja { text-align: right; display: block; padding: 2px 20px 2px 0; font: 12px Arial, Helvetica, sans-serif; text-decoration: none; margin: 3px; }
+a.veja:link, a.veja:visited {color: #537493;}
+a.veja:hover, a.veja:active {color: #435F78; font-style:italic;}
+
+/*Principal Serviços Animação*/ 
+#principal #linha1 { height:217px;}
+#principal #linha2 { margin-top:10px; margin-left:2px;}
+#principal #linha3 { }
+  
+#principal #ini_inicio {  float:left; width:660px; height:205px; }
+#principal #ini_inicio h1 { width:250px; text-align:center; padding-top:35px; color:#537493; font: bold 18px Arial, Helvetica, sans-serif; border-bottom: solid 2px #FF0000;}
+#principal #ini_inicio ul { list-style:none;}
+#principal #ini_inicio ul li { padding: 10px; color:#537493; font: 12px Arial, Helvetica, sans-serif;}
+#principal #ini_inicio a { text-decoration:none;}
+#principal #ini_inicio #animacao {float:left; margin: 5px 5px 5px 7px; background:url(../imgs/fnd_ser_branco.jpg) no-repeat; width:650px; height:205px; }
+/*****formatadores conteúdo página inicial para Animação do banner inicial *****/
+#chamada { position:relative; display: block; text-align: left; float: left; }
+#chamada img { margin:-3px 0px 0px 260px; width:388px; height:191px; border:0px; } 
+#chamada p {} 
+#chamada table {}        
+#chamada #chamadashow { margin: auto;}
+#chamada #chamadalink {  text-align:right; }
+#chamada td { text-align: left; }
+#chamada #chamadadis { color: #717173; position:absolute; top:20px; font: 18px Arial, Helvetica, sans-serif; }
+
+#chamada .link_nor, #chamada .link_act { width:21px;  font: normal 10px Arial, Helvetica, sans-serif; padding:3px 9px 7px 7px; margin: 0px 1px; position:relative; top:-5px; text-align:center; }
+#chamada .link_nor{ color: #FF0000;}   
+#chamada .link_act{ color:#000000;}       
+/*****formatadores conteúdo página inicial para Animação do banner inicial *****/
+
+/*Principal Acesso*/ 
+#principal #ini_acesso { margin: 5px 0px 0px 0px; float:left; background:url(../imgs/fnd_acesso.jpg) no-repeat; width:250px; height:206px;}
+#principal #ini_acesso h1 { color:#435F78; padding:10px; font: bold 14px Arial, Helvetica, sans-serif;}
+#principal #ini_acesso form { }
+
+#principal #ini_acesso #acessocliente { font: normal 11px Arial, Helvetica, sans-serif; }
+#principal #ini_acesso #acessocliente label{ display: block; float: left; width: 115px; color:#435F78; text-align:center; margin:5px 0px 0px 0px;}
+#principal #ini_acesso #acessocliente input, #acessocliente textarea { font: normal 11px Arial, Helvetica, sans-serif; width: 182px; margin-bottom: 2px; margin:5px 0px 0px 15px;}
+#principal #ini_acesso #acessocliente input.botao { width:60px;  font: 11px Arial, Helvetica, sans-serif; color: #435F78; background:#FFFFFF; padding: 5px 10px; margin-left:140px; }
+
+/*Principal Notícias*/
+#principal #ini_noticias {  width:655px; float:left; }
+#principal #ini_noticias h1{ width:655px; color:#717173; background:#EAEEF2; border-bottom: solid 2px #FF0000; font: 14px Verdana, Arial, Helvetica, sans-serif;}
+#principal #ini_noticias ul { list-style:none;}
+#principal #ini_noticias li { font: 12px Arial, Helvetica, sans-serif; padding: 5px 0px 0px 5px; border-bottom: solid 1px #D4DCE4;}
+#principal #ini_noticias li a{ display:block; text-decoration:none; }  
+#principal #ini_noticias li a:link, .ini_noticias li a:visited { color:#537493; }
+#principal #ini_noticias li a:hover, .ini_noticias li a:active { color:#32475A; }
+
+/*Principal Links*/        
+#principal #ini_links { width:250px; float:left; padding-left:10px;}
+#principal #ini_links h1{ color:#FFFFFF;  background: #435F78; border-bottom: solid 2px #999999; font: 14px Verdana, Arial, Helvetica, sans-serif; }
+#principal #ini_links ul { list-style:none;}
+#principal #ini_links li { color:#537493; font: 12px Arial, Helvetica, sans-serif; padding: 5px 0px 0px 5px; border-bottom: solid 1px #D4DCE4;}
+#principal #ini_links li a{ display:block; text-decoration:none; }  
+#principal #ini_links li a:link, .ini_links li a:visited { color:#537493; }
+#principal #ini_links li a:hover, .ini_links li a:active { color:#32475A; }
+
+/*Principal Contato*/
+#principal #ini_contato { background:url(../imgs/fnd_contato.jpg) no-repeat; width:310px; height:207px; float:left;}
+#principal #ini_contato h1 { color:#435F78; font: bold 24px Verdana, Arial, Helvetica, sans-serif; margin-top:60px; }
+#principal #ini_contato p { margin:10px 0px 0px 10px;color:#435F78; font: 12px Arial, Helvetica, sans-serif;}
+#principal #ini_contato a { color:#435F78; font: 12px Arial, Helvetica, sans-serif; text-decoration:none;}
+
+/*Principal Oportunidades*/
+#principal #ini_oportunidades { background:url(../imgs/fnd_oport.jpg) no-repeat; width:310px; height:207px; float:left;}
+#principal #ini_oportunidades h1 { color:#435F78; font: bold 24px Verdana, Arial, Helvetica, sans-serif; margin-top:60px; }
+#principal #ini_oportunidades ul { list-style:none; margin-top:5px;}
+#principal #ini_oportunidades li { color:#537493; font: 12px Arial, Helvetica, sans-serif; padding: 5px 0px 0px 20px; border-bottom: solid 1px #D4DCE4;}
+#principal #ini_oportunidades li a{ display:block; text-decoration:none; }  
+#principal #ini_oportunidades li a:link, .ini_oportunidades li a:visited { color:#537493; }
+#principal #ini_oportunidades li a:hover, .ini_oportunidades li a:active { color:#32475A; }
+
+/*Principal Newsletter*/
+#principal #ini_newsletter { background:url(../imgs/fnd_newsletter.jpg) no-repeat; width:310px; height:215px; float:left;}
+#principal #ini_newsletter h1 { color:#FFFFFF; font: bold 24px Verdana, Arial, Helvetica, sans-serif; margin-top:60px; }
+#principal #ini_newsletter p { color:#666666; font: 12px Arial, Helvetica, sans-serif; padding: 10px 0px 5px 10px;}
+#principal #ini_newsletter #fnewsletter input.botao { float:left; background: #D4DCE4; margin:5px 0px 0px 205px;  border: none; width: 80px; padding: 3px 0; }
+#principal #ini_newsletter #fnewsletter input { width:200px;  margin:0px 0px 0px 80px;}
+
+/*Internos*/   
+/*Menu Lateral Internos*/
+#lateral {  width: 250px;float: right;}   
+#lateral h2 {  border-bottom: solid 3px #999999; color: #FFFFFF; background: #435F78; font: 14px Verdana, Arial, Helvetica, sans-serif; padding:5px; }
+#lateral ul { list-style: none; height:180px; }  
+#lateral ul li { border-bottom: solid 1px #CCCCCC; }
+#lateral ul li a { display: block; padding: 5px; text-decoration: none; font: 12px Arial, Helvetica, sans-serif; color:#435F78; }
+#lateral ul li a:link, #lateral ul li a:visited {background:  #F0F0F0;}
+#lateral ul li a:hover, #lateral ul li a:active { background:  #F0F0F0;}
+#lateral ul li a.ativo  						  {  background:#EAEEF2;  padding-left: 10px; }
+
+#acesso_lateral { width:240px; height:190px; margin:5px;   font: normal 11px Arial, Helvetica, sans-serif; background:url(../imgs/fnd_acesso_lateral1.gif) no-repeat; }
+#acesso_lateral h1 { color:#435F78; padding:10px; font: bold 14px Arial, Helvetica, sans-serif;}
+#acesso_lateral  label{ display: block; float: left; width: 115px; color:#435F78; text-align:center; margin:5px 0px 0px 0px;}
+#acesso_lateral  input, textarea { font: normal 11px Arial, Helvetica, sans-serif; width: 182px; margin-bottom: 2px; margin:5px 0px 0px 15px;}
+#acesso_lateral  input.botao { width:60px;  font: 11px Arial, Helvetica, sans-serif; color: #435F78; background:#FFFFFF; padding: 5px 10px; margin-left:140px; }
+
+#endereco_lateral p{  margin: 5px 0px 0px 5px; color:#435F78; font: 12px Arial, Helvetica, sans-serif;}
+#endereco_lateral a { color:#435F78; font: 12px Arial, Helvetica, sans-serif; text-decoration:none;}
+
+.bordaBox {background: transparent; width:670px; padding-left:4px;}    
+.bordaBox .b1, .bordaBox .b2, .bordaBox .b3, .bordaBox .b4, .bordaBox .b1b, .bordaBox .b2b, .bordaBox .b3b, .bordaBox .b4b {display:block; overflow:hidden; font-size:1px;}  
+.bordaBox .b1, .bordaBox .b2, .bordaBox .b3, .bordaBox .b1b, .bordaBox .b2b, .bordaBox .b3b {height:1px;}  
+.bordaBox .b2, .bordaBox .b3, .bordaBox .b4 {background: #FFFFFF; border-left:0px solid #FFFFFF; border-right:1px solid  #FFFFFF;}  
+.bordaBox .b1 {margin:0 5px; background: #FFFFFF;}  
+.bordaBox .b2 {margin:0 3px; border-width:0 2px;}  
+.bordaBox .b3 {margin:0 2px;}  
+.bordaBox .b4 {height:2px; margin:0 1px;}  
+.bordaBox #interno { background:#FFFFFF; padding:5px; height:auto;}
+
+#interno p{ text-align: justify; font: 12px Arial, Helvetica, sans-serif; padding:5px; line-height:20px; text-align:justify;}
+#interno h1 { padding: 0 0 0 65px; border-bottom: solid 2px #FF0000; background:#F3F3F3; font:18px Verdana, Arial, Helvetica, sans-serif; color: #446688; }
+#interno h2 { font: bold 16px Arial, Helvetica, sans-serif; border-bottom: solid 1px #FF6600; color: #003366; }
+#interno h3 { border-bottom: solid 2px #FF0000; background:#F3F3F3; font:18px Verdana, Arial, Helvetica, sans-serif; color: #446688; }
+#interno h4 { font:18px Verdana, Arial, Helvetica, sans-serif; color: #446688; }
+
+
+#interno ul { list-style:none;}
+#interno ul li { border-bottom: solid 1px #CCCCCC; font: 12px  Arial, Helvetica, sans-serif;  }
+#interno ul li .cat { }
+#interno ul a { color:#537493; text-decoration: none; display: block; padding: 4px 2px; font: normal 12px Arial, Helvetica, sans-serif; }
+#interno ul a:link, #internos ul a:visited { background: #FFFFFF; }
+#interno ul a:hover, #internos ul a:active { background: #F0F0F0; }
+#interno .img_sobrenos { float:left; margin:9px;}
+
+#interno .servicosPrev { background:#FFFFFF; float:left; height:150px; border-bottom: solid 2px #F3F3F3; border-left:solid 2px #F3F3F3; border-right:solid 2px #F3F3F3;}
+#interno .servicos li { list-style:circle; margin-left:20px; line-height:25px; border:none;}
+#interno .servicosPrev h4{ text-align:center; padding:3px; color:#446688; font-family:Arial, Helvetica, sans-serif;}
+#interno .servicosPrev li { width:300px;border: none; list-style:circle; margin-left:20px; }
+
+/* forms */
+#fcandidato { display: block;  }
+#fcandidato fieldset{ background: #F0F0F0; padding: 10px; position: relative;  margin-top: 5px; }
+#fcandidato h3 { background: #FFFFFF; border-bottom: solid 1px #006600; display: block; position: relative; margin: -10px -10px 10px; padding: 5px; font: bold 12px Verdana, Arial, Helvetica, sans-serif; }
+#fcandidato label { font: bolder 10px Verdana, Arial, Helvetica, sans-serif; width: 130px; height: 25px; float:left; color: #000000; }
+#fcandidato label.checkbox { float: none; display: block; padding: 0; margin: 0; width: 100%;}
+#fcandidato input.checkbox { float: left; margin: 0 5px; width:0; height: 0; }
+#fcandidato input, #fcandidato textarea { font: 10px Verdana, Arial, Helvetica, sans-serif; width: 350px; margin: 0 0 10px; height: 15px; border: solid 1px #CCCCCC; }
+#fcandidato textarea { height: 100px; width: 550px; margin-bottom: 5px; }
+#fcandidato .botao, #fcandidato .botao1 { width: 125px; background: #FFFFFF; }
+#fcandidato .botao { margin-left: 80px; }
+#fcandidato .arquivo { font: 10px Verdana, Arial, Helvetica, sans-serif; width: 180px; margin: 0 0 0px; height: 22px; border: solid 1px #CCCCCC; }
+#fcandidato .obs { font: italic 11px Verdana, Arial, Helvetica, sans-serif; color: #999999; padding: 0px 10px; }
+
+      
+/*Fale Conosco*/        
+#contato { font: normal 11px Arial, Helvetica, sans-serif; margin: 10px 0px 0px 120px; }
+#contato label{ display: block; float:left; width: 80px; }
+#contato input, #contato textarea { display:block; font: normal 11px Arial, Helvetica, sans-serif; width:300px; border: solid 1px #CCCCCC;  margin-bottom: 2px;}
+#contato input.botao  { width:100px; border: none; background:#F0F0F0; font: 12px Arial, Helvetica, sans-serif; color: #537493; padding: 5px 10px; margin-left:100px; float:left;}
+#contato input.botao1 { width:100px; border: none; background:#F0F0F0; font: 12px Arial, Helvetica, sans-serif; color: #537493; padding: 5px 10px; margin-left:210px; }
+.localizacao { margin: 20px 0px 20px 120px;}
+
+/*Rodapé*/
+#rodape {float:left; width:932px; background:#ADADAF; }
+#copyright  { margin:5px; font: normal 12px Arial, Helvetica, sans-serif; color: #FFFFFF; }
+#rodape img { float:right; margin-right:20px; margin-top:-30px;} 

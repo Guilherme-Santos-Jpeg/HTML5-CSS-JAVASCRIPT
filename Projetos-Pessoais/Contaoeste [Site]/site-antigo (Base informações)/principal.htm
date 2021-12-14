@@ -1,0 +1,569 @@
+<!--tpl:conteudo-->
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+<!--tpl:head-->
+<head>     
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Contaoeste Contabilidade S/S</title>
+    <meta name="description" content="{description}" />
+    <meta name="keywords" content="{keywords}" />
+    <meta name="author" content="{author}" />
+    <meta name="revisit-after" content="{revisit-after}" />
+    <meta name="reply-to" content="{reply-to}" />
+    <meta name="copyright" content="{copyright}" />
+    <meta name="robots" content="{robots}" />
+    <!--tpl:text_javascript-->       
+	<script src="js/{file}.js" language="javascript" type="text/javascript"></script>      
+    <!--/tpl:text_javascript-->
+    <link rel="Shortcut Icon" type="image/ico" href="{favicon-image}" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" title="Padrão" />
+    <link rel="stylesheet" type="text/css" href="js/css/jquery.lightbox-0.5.css" media="screen" />
+    <link rel="stylesheet" type="text" href="js/jquery.lightbox-0.5.js" media="screen" />
+</head>
+<!--/tpl:head-->       
+<!--tpl:body-->    
+<body>         
+<div id="main">   
+	<div id="topo">
+		<div id="menutop">
+            <ul>
+                <li><a href="index.php">Principal</a></li>    
+                <li><a href="#" class="{class_sistema}">Sistema</a></li>
+                <li><a href="index.php" class="{class_webmail}">Webmail</a></li>
+            </ul>
+		</div>
+        <div id="cabecalho">
+            <div id="logo">
+                <a href="http://www.contaoeste.com.br/site"> <img src="imgs/logo1.jpg" border="0"> 
+                <img src="imgs/logoDavid.jpg" border="0"></a>
+            </div>
+        </div>
+		<div id="menu">         	                   
+            <ul>
+                <li><a href="index.php?exc=sobrenos.visaogeral"     class="{class_sobrenos}">Sobre Nós</a></li>
+                <li><a href="index.php?exc=servicos"    			class="{class_servicos}">Serviços</a></li> 
+                <li><a href="index.php?exc=links.visaogeral" 		class="{class_links}">Links</a></li>                            
+                <li><a href="index.php?exc=noticias.visaogeral" 	class="{class_noticias}">Notícias</a></li> 
+                <li><a href="index.php?exc=oportunidades"			class="{class_oportunidades}">Oportunidades</a></li> 
+                <li><a href="index.php?exc=contato" 	 			class="{class_contato}">Fale Conosco</a></li>
+            </ul>
+       </div>
+    </div>
+    <div id="conteudo">  
+    <!--tpl:internos-->
+		<!--tpl:internos_lateral-->
+			<div id="acesso_lateral">
+				   <h1>Acesso ao Cliente</h1>
+				  <form id="acessocliente" name="acessocliente" action="../sistema/index.php?exc=login" method="post">
+					<label>Informe seu E-mail</label><input name="login" type="text" id="login" /> 
+					<label>Informe sua Senha</label><input name="senha" type="password" id="senha"/> 
+					<input type="submit" name="botao" class="botao" value="Acessar" />
+					<a href="../sistema/index.php?exc=senha" class="veja">Esqueci minha senha</a><br />
+				</form>
+			</div>
+			<div id="endereco_lateral"> 
+				<p>
+					Rua Barão do Rio Branco, 529-E - Jardim Itália<br />
+					89802-101 - Chapecó/SC<br />
+					<strong>(49) 3319-4888</strong><br />
+					<a href="mailto:recepcao@contaoeste.com.br"><em>recepcao@contaoeste.com.br</em></a><br />
+				</p>
+			</div>
+		<!--/tpl:internos_lateral-->       
+		<!--tpl:internos_inicio-->
+		<div id="principal">
+		<!--tpl:inicio_internos-->
+			<!--tpl:inicio_internos_visaogeral-->
+				<div id="linha1">    
+				   <div id="ini_inicio">
+					  <div id="animacao">
+							<div id="imgstore" style="display:none;">
+								<img src="imgs/img_animacao.jpg"  	title="<h1>Conheça-nos</h1><br />(49) 3319-4888<br />Rua Barão do Rio Branco<br />Jardim Itália"> 
+								<img src="imgs/img_animacao2.jpg" 	title="<h1>Visite-nos</h1><br />Ficaremos honrados<br /> com seu contato!">
+								<img src="imgs/img_animacao3.jpg" title="<h1>Atendimento Personalizado</h1><br />Ambientes para reuniões<br />">							</div> 
+						<div id="chamada"></div>
+					  </div>
+					</div>  
+				   <div id="ini_acesso">
+						   <h1>Acesso ao Cliente</h1>
+				  <form id="acessocliente" name="acessocliente" action="../sistema/index.php?exc=login" method="post">
+					<label>Informe seu E-mail</label><input name="login" type="text" id="login" /> 
+					<label>Informe sua Senha</label><input name="senha" type="password" id="senha"/> 
+					<input type="submit" name="botao" class="botao" value="Acessar" />
+					<a href="../sistema/index.php?exc=senha" class="veja">Esqueci minha senha</a><br />
+				</form>
+					</div> 
+			   </div>      
+			   <div id="linha2"> 
+					<div id="ini_noticias">
+						<h1>Últimas Notícias</h1>
+						<ul>
+						<!--tpl:listaNoticiasFrente-->
+							<li><a href="index.php?exc=noticias.ver.{codigo}">{data} - {categoria}: {nome}</a></li>
+						<!--/tpl:listaNoticiasFrente-->
+						</ul>
+						<a href="index.php?exc=noticias.visaogeral" class="veja">veja todas as notícias...</a>
+					</div>   
+					<div id="ini_links">
+					 <h1>Links Úteis</h1>
+						<ul>
+						<!--tpl:listaLinksFrente-->
+						  <li><a href="{url}" target="_blank">{link}</a></li>
+						<!--/tpl:listaLinksFrente-->
+						</ul>
+						<a href="index.php?exc=links.visaogeral" class="veja">veja todos os links...</a>
+					</div> 
+				</div>
+				<div id="linha3">
+				   <div id="ini_contato">
+						  <h1>Fale Conosco</h1>
+						   <p>Rua Barão do Rio Branco, 529-E - Jardim Itália<br />
+						   89802-101 - Chapecó/SC<br />
+						   <strong>(49) 3319-4888</strong><br />
+						   <a href="mailto:recepcao@contaoeste.com.br"><em>recepcao@contaoeste.com.br</em></a><br />
+						   </p>          
+					 </div>
+				  <div id="ini_oportunidades">
+					<h1>Oportunidades</h1>
+						<ul>
+						<!--tpl:listaOportunidadesFrente-->
+						  <li><a href="index.php?exc=oportunidades.ver.{codigo}">{data} - {nome}</a></li>
+						<!--/tpl:listaOportunidadesFrente-->
+						</ul>
+						<a href="index.php?exc=oportunidades" class="veja">veja todas as vagas...</a>
+					</div> 
+				   <div id="ini_newsletter">	
+					   <h1>Newsletter</h1>
+					   <p>Cadastre-se em nossa newsletter
+					   e acompanhe<br /> todas as novidades.<br /></p>
+					   <form id="fnewsletter" name="fnewsletter" action="index.php" method="post">
+						<input name="news_nome" type="text" id="news_nome" onFocus="if(this.value=='Digite seu nome')this.value=''" onBlur="if(this.value=='')this.value='Informe seu nome'" value="Informe seu nome" maxlength="45" /> 
+						<input name="news_email" type="text" id="news_email" onFocus="if(this.value=='Digite seu e-mail')this.value=''" onBlur="if(this.value=='')this.value='Informe seu e-mail'" value="Informe seu e-mail" maxlength="45" /> 
+						<input type="submit" name="botao" class="botao" value="Cadastrar" />
+						{scriptNews}
+					  </form>
+				</div>
+			   </div> 
+			   <!--/tpl:inicio_internos_visaogeral-->
+		   <!--/tpl:inicio_internos--> 
+	   </div> 
+	  <!--/tpl:internos_inicio-->  
+		<!--tpl:internos_sobrenos-->
+			<div id="lateral">
+				<h2>Menu Sobre nós</h2>
+				<ul>
+					<li><a href="index.php?exc=sobrenos.visaogeral"	class="{sub_visaogeral}">Visão Geral</a></li>
+				</ul>
+				{lateral}   
+			</div>         
+		  <div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong>  
+			<div id="interno">
+			<!--tpl:sobrenos_internos-->
+				<!--tpl:sobrenos_internos_visaogeral--> 
+					<h3>Sobre Nós</h3>
+                    <p>Em desenvolvimento!</p>
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+					<!--p><img src="imgs/empresSobreNos.jpg" class="img_sobrenos" />A CONTAOESTE CONTADORES AUTÔNOMOS S/S LTDA,  foi fundada em 01/10/1982. Um dos maiores e mais tradicionais Escritórios de Contabilidade de Chapecó, presta serviços nas áreas contábil, fiscal, tributária, departamento pessoal, alem da área Jurídica.</p>
+					<p>O Escritório de Contabilidade Contaoeste desenvolve trabalhos na área Contábil para empresas de grande, médio e pequeno porte. Atendem clientes nas mais diversas áreas de atuação do mercado.</p>
+					<p>Para que tudo isso aconteça contamos com uma equipe altamente qualificada, assessorada pela mais conceituada empresa de Legislação Societária, Trabalhista, Contábil, Fiscal, estamos portanto capacitados para atendê-los e direcioná-los nas atividades de sua empresa, para dar-lhes respaldo nas decisões importantes que vierem ser necessárias. Nosso principal interesse é a saúde financeira de sua empresa.</p>
+					<h4>Missão:</h4>
+					<p>Oferecer às empresas a possibilidade de terceirizar a execução dos trabalhos de alguns de seus departamentos, prestar esses serviços com qualidade, agilidade e eficiência. Trabalho em parceria e comprometimento é o nosso lema.</p>
+					<p><strong>Contato e Informações:</strong></p>
+					<p>Caso necessitem de serviços nas áreas em que atuamos, ficaremos honrados com o contato ou consulta que façam.</p>
+					<p>Telefone: (49) 3319-4888<br />
+					FAX: (49) 3319-4888 </p>
+					<p>Av. Barão do Rio Branco , 529-E<br />
+					CEP 89.802-10  *  Chapecó - Santa Catarina<br />
+					e-mail: <a href="mailto:recepcao@contaoeste.com.br">recepcao@contaoeste.com.br</a><br />
+					WebSite: <a href="http:www.contaoeste.com.br">www.contaoeste.com.br</a></p-->
+					
+				<!--/tpl:sobrenos_internos_visaogeral--> 
+			<!--/tpl:sobrenos_internos-->
+			</div>
+		  <strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div>  
+	
+		<!--/tpl:internos_sobrenos--> 
+		<!--tpl:internos_servicos-->
+			<div id="lateral">
+				<h2>Menu Serviços</h2>
+				<ul>
+					<li><a href="index.php?exc=servicos.visaogeral"	class="{sub_visaogeral}">Visão Geral</a></li>
+					<li><a href="index.php?exc=servicos.societaria"	class="{sub_visaogeral}">Área Societária / Cadastral</a></li>
+					<li><a href="index.php?exc=servicos.trabalhista"class="{sub_visaogeral}">Área Trabalhista / Previdenciária</a></li>
+					<li><a href="index.php?exc=servicos.contabil"	class="{sub_visaogeral}">Área Contábil</a></li>
+					<li><a href="index.php?exc=servicos.fiscal	"	class="{sub_visaogeral}">Área Fiscal</a></li>
+					<li><a href="index.php?exc=servicos.imposto"	class="{sub_visaogeral}">Imposto de Renda</a></li>
+				</ul>
+				{lateral}
+			</div>
+		  <div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong> 
+			<div id="interno">
+			<!--tpl:servicos_internos-->
+				<!--tpl:servicos_internos_visaogeral--> 
+					<h3>Serviços</h3>
+					<p>A Contaoeste presta serviços de assessória empresarial, jurídico e contábil.</p>
+					<p>Temos a sua disposição um departamento contábil composto por setores, contábil, fiscal e de pessoal, fazemos também declarações anuais de importo de renda, pessoa física e jurídica e constituição, alteração e dissolução de empresas.</p>
+					<p>Na contaoeste você conta também com departamento jurídico, que atua nas áreas de direito tributário, comercial, civil, trabalhista e falimentar, com grandes atuações nas ações relativas ao sistema financeiro de habitação e ações revisionais de contratos bancários.</p>
+					<p>Contaoeste tudo para facilitar a vida de sua empresa!</p>
+				<!--/tpl:servicos_internos_visaogeral-->
+				
+				<!--tpl:servicos_internos_societaria--> 
+				<h3>Área Societária / Cadastral</h3>
+				<ul class="servicos">
+					<li>Abertura de empresas;</li>
+					<li>Ingresso e saída de sócios;</li>
+					<li>Alteração de endereço;</li>
+					<li>Alteração de razão / denominação social;</li>
+					<li>Abertura e fechamento de filial;</li>
+					<li>Consolidação do contrato social;</li>
+					<li>Baixa de empresas;</li>
+					<li>Alvarás da Prefeitura, da Saúde.</li>
+				</ul>
+				<!--/tpl:servicos_internos_societaria--> 
+				
+				<!--tpl:servicos_internos_trabalhista-->
+				<h3>Área Trabalhista / Previdenciária</h3> 
+				<ul class="servicosPrev">
+				<h4>Admissão</h4>
+					<li>Registro no livro de empregados e na CTPS;</li>
+					<li>Contrato de experiência;</li>
+					<li>Cadastro geral de empregados e desempregados – CAGED;</li>
+					<li>Cadastro do funcionário junto ao PIS.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>Demissão</h4>
+					<li>Aviso prévio / Pedido de dispensa;</li>
+					<li>Termo de rescisão de contrato de trabalho;</li>
+					<li>Seguro desemprego;</li>
+					<li>Baixa da CTPS;</li>
+					<li>Cadastro geral de empregados e desempregados;</li>
+					<li>Acompanhamento em rescisões nos órgãos competentes.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>Rotina Mensal</h4>
+					<li>Elaboração da folha de pagamento;</li>
+					<li> Recibos de salários e de pró-labore;</li>
+					<li>Programação, aviso e recibo de férias;</li>
+					<li> Baixa da CTPS.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>INSS</h4>
+					<li>Guia de INSS;</li>
+					<li>Comunicação de auxílio doença e de acidente de trabalho;</li>
+					<li>Assessoria no encaminhamento de aposentadoria e pensões.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>FGTS</h4>
+					<li>Guia de recolhimento FGTS;</li>
+					<li>Extrato atualizado individual dos empregados.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>RAIS</h4>
+					<li>Preenchimento do formulário anual;</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>Sindicatos</h4>
+					<li>Guias empregados/empregador;</li>
+					<li> Acompanhamentos de convenções / acordos / dissídios coletivos.</li>
+				</ul>
+				
+				<ul class="servicosPrev">
+				<h4>Acessoria</h4>
+					<li>Assessoria em todas as rotinas trabalhistas;</li>
+					<li>Análise, orientação e controle da aplicação da legislação vigente;</li>
+					<li>Assessoria no atendimento à fiscalização.</li>
+				</ul>
+				<!--/tpl:servicos_internos_trabalhista--> 
+				
+				<!--tpl:servicos_internos_contabil-->
+				<h3>Área Contábil</h3>
+				<ul class="servicos">
+					<li>Plano de contas adequado à empresa;</li>
+					<li>Preparação e classificação de documentos;</li>
+					<li>Escrituração dos livros diário e razão conforme as normas e princípios contábeis vigentes;</li>
+					<li>Conciliação e fechamento;</li>
+					<li>Prévia para fechamento do balanço geral;</li>
+					<li>Elaboração de balancetes periódicos;</li>
+					<li>Elaboração de balanços anuais;</li>
+					<li>Planejamento contábil e tributário;</li>
+					<li>Cálculos de tributos em atraso;</li>
+					<li> Emissão e encadernação dos livros;</li>
+					<li>Acompanhamento em eventuais fiscalizações.</li>
+				</ul> 
+				<!--/tpl:servicos_internos_contabil--> 
+				
+				<!--tpl:servicos_internos_fiscal--> 
+				<h3>Área Fiscal</h3>
+				<ul class="servicos">
+					<li>Análise, orientação e controle da aplicação da legislação (federal, estadual e municipal);</li>
+					<li>Autorização para emissão de notas fiscais;</li>
+					<li>Normativas aos órgãos competentes;</li>
+					<li>Confecções de guias para pagamentos de impostos;</li>
+					<li>Assessoria em todas as rotinas fiscais;</li>
+					<li>Assessoria no atendimento à fiscalização;</li>
+					<li>Planejamento tributário;</li>
+					<li>Escrituração de livros;</li>
+					<li> Requerimentos;</li>
+					<li>Certidões Negativas.</li>
+				</ul> 
+				<!--/tpl:servicos_internos_fiscal--> 
+				
+				<!--tpl:servicos_internos_imposto--> 
+				<h3>Imposto de Renda</h3>
+				<ul class="servicos">
+					<li>Análise, orientação e controle da aplicação dos dispositivos legais vigentes; </li>
+					<li> Declaração de Imposto de Renda Pessoa Jurídica; </li>
+					<li> Declaração de Imposto de Renda Pessoa Física; </li>
+					<li>Calculo do I.R.R.F; </li>
+					<li>Elaboração da DIRF;</li>
+					<li>Declaração do Imposto Territorial Rural. – ITR.</li>
+				</ul> 
+				<!--/tpl:servicos_internos_imposto--> 
+
+			<!--/tpl:servicos_internos-->
+			</div>
+			<strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div>    
+	   <!--/tpl:internos_servicos-->
+	   <!--tpl:internos_links-->
+		<div id="lateral">
+			<h2>Menu links</h2>
+			<ul>
+				<!--tpl:listaCats-->
+				<li><a href="{url}" class="{sub_visaogeral}">{categoria}</a></li>
+				<!--/tpl:listaCats-->
+			</ul>
+			{lateral}
+		</div>
+		<div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong> 
+		<div id="interno">
+		<!--tpl:links_internos-->
+			<!--tpl:links_internos_visaogeral-->
+				<h1>{titulo}</h1>
+				<ul>
+					<!--tpl:listaLinks-->
+					
+						<li><a href="{url}">{link}</a></li>
+					
+				    <!--/tpl:listaLinks-->
+				</ul>
+			<!--/tpl:links_internos_visaogeral-->
+			
+			<!--tpl:links_internos_categoria-->
+				<h1>{titulo}</h1>
+				<ul>
+					<!--tpl:listaLinks-->
+					<li>
+						<li><a href="{url}">{link}</a></li>
+					</li>
+				    <!--/tpl:listaLinks-->
+				</ul>
+			<!--/tpl:links_internos_categoria-->
+			
+		  <!--/tpl:links_internos-->
+		  </div>
+			<strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div> 
+	   <!--/tpl:internos_links-->
+	   
+	   <!--tpl:internos_noticias-->
+		<div id="lateral">
+			<h2>Menu Notícias</h2>
+			<ul>
+				<!--tpl:listaCats-->
+				<li><a href="{url}" class="{sub_visaogeral}">{categoria}</a></li>
+				<!--/tpl:listaCats-->
+			</ul>
+			{lateral}
+		</div>
+		<div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong> 
+		<div id="interno">
+		<!--tpl:noticias_internos-->
+			<!--tpl:noticias_internos_visaogeral-->
+				<h1>{titulo}</h1>
+				<ul>
+					<!--tpl:listaNoticias-->
+					<li><a href="{url}">{nome}</a></li>
+					<!--/tpl:listaNoticias-->
+				</ul>
+			<!--/tpl:noticias_internos_visaogeral-->
+			
+			<!--tpl:noticias_internos_ver-->
+				<h2>{nome}</h2>
+				<strong class="data">Data: {data}</strong>
+				<p>{descricao}</p>
+				<a href="{codigo}" class="veja">voltar</a>
+			<!--/tpl:noticias_internos_ver-->
+			
+			<!--tpl:noticias_internos_categoria-->
+				<h1>{titulo}</h1>
+				<ul>
+					<!--tpl:listaNoticias-->
+					<li>
+						<li><a href="{url}">{nome}</a></li>
+					</li>
+				    <!--/tpl:listaNoticias-->
+				</ul>
+			<!--/tpl:noticias_internos_categoria-->
+			
+		<!--/tpl:noticias_internos-->
+		</div> 
+		<strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div> 
+		<!--/tpl:internos_noticias--> 
+		
+    	<!--tpl:internos_oportunidades-->
+		 <div id="lateral">
+			<h2>Menu de Oportunidades</h2>
+			<ul>
+				<li><a href="index.php?exc=oportunidades.visaogeral"	class="{sub_visaogeral}">Visão Geral</a></li>
+				<li><a href="index.php?exc=oportunidades.curriculo"		class="{sub_curriculo}">Cadastre seu Currículo</a></li>
+			</ul>
+			{lateral}
+		</div>
+		<div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong> 
+		<div id="interno">
+		<!--tpl:oportunidades_internos-->
+			<!--tpl:oportunidades_internos_visaogeral-->
+				<h1>Oportunidades</h1>
+				<ul>
+					<!--tpl:listaOportunidades-->
+					<li><a href="index.php?exc=oportunidades.ver.{codigo}">{data} - {nome}</a></li>
+					<!--/tpl:listaOportunidades-->
+				</ul>
+			<!--/tpl:oportunidades_internos_visaogeral-->
+			<!--tpl:oportunidades_internos_curriculo-->
+				<h1>Cadastro de Currículo</h1>
+				<div id="statusEmail"></div>
+				<form id="fcandidato" name="fcandidato" method="post" action="index.php?exc=oportunidades.enviaCur" enctype="multipart/form-data">
+					<fieldset>
+					<h3>Dados Pessoais:</h3>
+					<label for="fnome">Nome(*):</label><input type="text" name="fnome" id="fnome" /><br />
+					<label for="fdt_nascimento">Data Nascimento(*):</label><input type="text" name="fdt_nascimento" id="fdt_nascimento" /><br />
+					<label for="femail">E-mail(*):</label><input type="text" name="femail" id="femail" /><br />
+					<label for="ffiliacao">Filiação(*):</label><input type="text" name="ffiliacao" id="ffiliacao" /><br />
+					<label for="fest_civil">Estado Civil(*):</label><input type="text" name="fest_civil" id="fest_civil" /><br />
+					<label for="fendereco">Endereço(*):</label><input type="text" name="fendereco" id="fendereco" /><br />
+					<label for="fbairro">Bairro(*):</label><input type="text" name="fbairro" id="fbairro" />	<br />
+					<label for="fcidade">Cidade/UF(*):</label><input type="text" name="fcidade" id="fcidade" /><br />
+					<label for="ftelefone01">Telefone(*):</label><input type="text" name="ftelefone01" id="ftelefone01" /><br />
+					<label for="ftelefone02">Celular(*):</label><input type="text" name="ftelefone02" id="ftelefone02" /><br />
+					</fieldset>
+					<fieldset>
+					<h3>Documentação:</h3>
+					<label for="frg">RG(*):</label><input type="text" name="frg" id="frg" /><br />
+					<label for="fcpf">CPF(*):</label><input type="text" name="fcpf" id="fcpf" /><br />
+					<label for="fcnh">CNH - Categoria(*):</label><input type="text" name="fcnh" id="fcnh" /><br />
+					<label for="finstrucao">Grau de Instrução(*):</label><input type="text" name="finstrucao" id="finstrucao" /><br />
+					</fieldset>
+					<fieldset>
+					<h3>Áreas de Interesse(*):</h3>
+					<label class="checkbox"><input name="interesse[]" type="checkbox" class="checkbox" id="fcontabilidade" value="Contabilidade" />Contabilidade</label>
+					<label class="checkbox"><input name="interesse[]" type="checkbox" class="checkbox" id="ffinanceiro" value="Financeiro" />Financeiro</label>
+					<label class="checkbox"><input name="interesse[]" type="checkbox" class="checkbox" id="frh" value="RH" />RH</label>
+					</fieldset>
+				    <fieldset>
+					<h3>Mais informações</h3>
+					<label for="fexperiencia">Experiencia(*):</label><textarea name="fexperiencia" rows="4" id="fexperiencia"></textarea><br />
+					<label for="finformacoes">Informações(*):</label><textarea name="finformacoes" rows="4" id="finformacoes"></textarea><br />            
+					</fieldset>
+					<fieldset>
+					<h3>Currículo original</h3>
+					<label for="fcurriculo">Procurar currículo:</label><input type="file" class="arquivo" name="fcurriculo" id="fcurriculo" />
+					</fieldset>
+					
+					<input name="button" type="submit" class="botao" value="Enviar" />
+					<input name="reset" type="reset"  class="botao1" value="Redefinir" />		
+				</form>	
+				<p class="obs">(*) Os campos que contém esse símbolo são obrigatórios.</p>		
+		</div>
+		<!--/tpl:oportunidades_internos_curriculo-->
+		<!--tpl:oportunidades_internos_enviaCur-->
+		<div class="internos">
+			<h1>Cadastro de Currículo</h1>
+			<p>{mensagem}</p>
+		</div>
+		<!--/tpl:oportunidades_internos_enviaCur-->
+			
+		<!--tpl:oportunidades_internos_ver-->
+			<h2>{nome}</h2>
+			<strong class="data">{data}</strong>
+			<p>{descricao}</p>
+			<a href="index.php?exc=oportunidades" class="veja">voltar</a>
+		<!--/tpl:oportunidades_internos_ver-->
+			
+		<!--/tpl:oportunidades_internos-->
+	   </div> 
+	    <strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div>
+	   <!--/tpl:internos_oportunidades-->
+	   <!--tpl:internos_contato-->
+		<div id="lateral">
+			<h2>Menu de Fale Conosco</h2>
+			<ul>
+				<li><a href="index.php?exc=contato.visaogeral"	class="{sub_visaogeral}">Fale Conosco</a></li>
+				<li><a href="index.php?exc=contato.localizacao"	class="{sub_localizacao}">Localização</a></li>
+			</ul>
+			{lateral}
+		</div>
+		<div class="bordaBox"> 
+		   <strong class="b1"></strong><strong class="b2"></strong><strong class="b3"></strong><strong class="b4"></strong> 
+		<div id="interno">
+		<!--tpl:contato_internos-->
+			<!--tpl:contato_internos_visaogeral-->
+				<h1>Fale Conosco</h1>
+				<form id="contato" name="contato" method="post" action="index.php?exc=contato.envia" >
+					<label for="cnome">Nome*:</label><input type="text" name="cnome" id="cnome" /><br />
+					<label for="telefone">Telefone*:</label><input type="text" name="telefone" id="telefone" class="fone" /><br />
+					<label for="cemail">E-mail*:</label><input type="text" name="cemail" id="cemail" /><br />
+					<label for="cidade">Cidade*:</label><input type="text" name="cidade" id="cidade" /><br />
+					<label for="mensagem">Mensagem*:</label><textarea name="mensagem" rows="8" id="mensagem"></textarea><br />
+					<input name="button" type="submit" class="botao"  value="Enviar" />
+					<input name="reset"  type="reset"  class="botao1" value="Redefinir" /><br />		
+					<span class="observacao">(*) Campos obrigatórios.</span>
+				</form>	        
+			<!--/tpl:contato_internos_visaogeral-->
+			<!--tpl:contato_internos_localizacao-->
+				 <h1>Localização</h1>
+				 <div class="localizacao">
+				     <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=brasil,+santa+catarina,+chapec%C3%B3,+Rua+Bar%C3%A3o+do+Rio+Branco,+529-E++-+Jardim+It%C3%A1lia&amp;sll=-27.104357,-52.620724&amp;sspn=0.006523,0.009645&amp;ie=UTF8&amp;ll=-27.094968,-52.6161&amp;spn=0.006523,0.009645&amp;t=h&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=brasil,+santa+catarina,+chapec%C3%B3,+Rua+Bar%C3%A3o+do+Rio+Branco,+529-E++-+Jardim+It%C3%A1lia&amp;sll=-27.104357,-52.620724&amp;sspn=0.006523,0.009645&amp;ie=UTF8&amp;ll=-27.094968,-52.6161&amp;spn=0.006523,0.009645&amp;t=h&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left; ">Exibir mapa ampliado</a></small>
+				</div>
+			<!--/tpl:contato_internos_localizacao-->
+			
+			<!--tpl:contato_internos_envia-->
+				<h1>Contato</h1>              
+				<p>{mensagem}</p>
+			<!--/tpl:contato_internos_envia-->
+			
+	   <!--/tpl:contato_internos--> 
+	   </div>
+	    <strong class="b4"></strong><strong class="b3"></strong><strong class="b2"></strong><strong class="b1"></strong>
+	   </div>
+	  <!--/tpl:internos_contato-->
+	  </div>
+   <!--/tpl:internos--> 
+   </div>   
+   <div id="base">
+      <div id="rodape">			
+        <p id="copyright">Copyright 2018 - Contaoeste Contadores Autônomos S/S Ltda.<br /> Todos os direitos reservados.</p>
+        <a href="http://www.bazzi.com.br/" title="Bazzi.Com - www.bazzi.com.br" class="bazzi" target="_blank"><img src="imgs/bazzi.jpg" alt="Bazzi.Com - www.bazzi.com.br" border="0" /></a>
+      </div>
+   </div>
+</div>
+<!-- google-->
+</body>
+<!--/tpl:body-->
+</html>
+<!--/tpl:conteudo-->
