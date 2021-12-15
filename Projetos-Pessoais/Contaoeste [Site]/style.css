@@ -24,6 +24,10 @@ body {
     outline: 0;
 }
 
+div {
+    display: BLOCK;
+}
+
 li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -137,6 +141,8 @@ header img:hover {
 
 .contaoeste {
     width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
 }
 
 .contaoeste h2 {
@@ -167,7 +173,7 @@ header img:hover {
 
 
     width: 100%;
-    height: 800px;
+
     
 
     margin: auto;
@@ -182,6 +188,8 @@ header img:hover {
     background-color: rgba(0, 0, 0, 0.9);
     float: left;
     position: relative;
+    -webkit-box-shadow: 0px 10px 4px -3px rgba(0,0,0,0.53); 
+    box-shadow: 0px 10px 4px -3px rgba(0,0,0,0.53);
     
 }
 
@@ -205,3 +213,135 @@ header img:hover {
 
     margin: -30px auto auto auto;
 }   
+
+.diferenciais {
+    display: block;
+    margin: 6%;
+}
+
+.diferenciais h2 {
+    font-size: 3rem;
+    color: rgb(48, 47, 47);
+    text-align: center;
+}
+
+.diferenciais h3 {
+    font-size: 1.1rem;
+    color: rgb(48, 47, 47);
+    text-align: center;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.box {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.otimizar {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #686866;
+
+    margin: 5% 0 0 15%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.legenda {
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    margin: -18px 0 0 0;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(207, 196, 196);
+    border-style: solid;
+    
+}
+
+.legenda h1 {
+    font-size: 1.4rem;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.legenda p {
+    font-size: 0.8rem;
+    color: rgb(126, 126, 126);
+    text-align: justify;
+    line-height: 150%;
+    margin: 5px 10px 0 10px;
+}
+
+
+.lucratividade {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #686866;
+
+    margin: 0 0 0 3%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.redução {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #686866;
+
+    margin: 0 0 0 3%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.funciona {
+    display: inline-block;
+    margin: 0 0 70px;
+}
+
+.box-function {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    margin: -18px 0 0 0;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(207, 196, 196);
+    border-style: solid;
+}
+
+.box-function h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    justify-content: left;
+    margin: 10px 0 0 0;
+}
+
+.box-function p {
+    display: inline-block;
+}
+
+
+.icon {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
