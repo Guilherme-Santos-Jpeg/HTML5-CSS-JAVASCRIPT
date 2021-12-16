@@ -86,7 +86,7 @@ header nav ul li {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 1.4em;
+    font-size: 1rem;
     padding: 1.2rem;
     transition: all 250ms linear 0s;
     border-style: solid;
@@ -109,7 +109,7 @@ header nav ul li.button {
 header nav ul li a.button {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 1.6em;
+    font-size: 1rem;
     font-weight: 900;
     padding: 1.6rem;
     transition: all 250ms linear 0s;
@@ -317,31 +317,76 @@ header img:hover {
     margin: 0 0 70px;
 }
 
+.funciona h2 {
+    font-size: 3rem;
+    color: rgb(48, 47, 47);
+    text-align: center;
+}
+
+.funciona h3 {
+    font-size: 1.1rem;
+    color: rgb(48, 47, 47);
+    text-align: center;
+}
+
 .box-function {
     display: flex;
-    width: 250px;
+    width: 1200px;
     height: 100px;
-    margin: -18px 0 0 0;
+    margin: 35px 0px 0 0;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     border-width: 1px;
     border-radius: 2px;
-    border-color: rgb(207, 196, 196);
+    border-color: rgb(255, 255, 255);
     border-style: solid;
 }
 
 .box-function h2 {
-    display: inline-block;
-    font-size: 1.5rem;
+    display: flex;
+    font-size: 1.3rem;
     justify-content: left;
-    margin: 10px 0 0 0;
+    margin: -15px 0 0 0;
 }
 
 .box-function p {
-    display: inline-block;
+    display:flex;
+    margin: 4px 0 0 5px;
 }
 
 
 .icon {
-  display: inline-block;
-  margin: 0 0 0 5px;
+  display: block;
+  margin: 0;
+}
+
+.word-function {
+    margin-left: 0px ;
+    margin-top: 10px;
+}
+.information {
+    display: block;
+    margin: 6%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #082f5c;
+}
+
+.box-information {
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    margin: 35px 0px 0 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+ul li {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #071833;
 }
